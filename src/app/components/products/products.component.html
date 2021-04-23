@@ -1,0 +1,33 @@
+<ul>
+    <li *ngFor="let product of productsListing">
+        {{product.name}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let person of peopleListing">
+        {{person.name}}
+    </li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of peopleListing; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+<button (click)="addIphone()">
+    Add iphone
+</button>
