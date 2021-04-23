@@ -12,10 +12,13 @@ const routes: Routes = [
       path : "", component : HomePageComponent
     },
     {
-      path : "products", component : ProductsPageComponent
+      path : "products", redirectTo : "new-products"
     },
     {
       path : "product-details", component : ProductsDetailsPageComponent
+    },
+    {
+      path : "new-products", component : ProductsPageComponent
     },
     {
       path : "**", component : NotFoundPageComponent

@@ -65,8 +65,6 @@ export class ProductsComponent implements OnInit {
         console.log(item, "filter");
       })
 
-
-
   }
 
   addIphone() {
