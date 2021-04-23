@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "laptop",
+        "id" : 1,
+        "price" : 1299,
+        "category" : [
+            "electronics",
+            "computing"
+        ],
+        "tags" : ["apple", "macbook"]
+    },
+    {
+        "name" : "windows laptop",
+        "id" : 2,
+        "price" : 1299,
+        "category" : [
+            "electronics",
+            "computing"
+        ],
+        "tags" : ["microsoft", "surface"]
+    }
+]

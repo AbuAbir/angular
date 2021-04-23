@@ -1,8 +1,8 @@
 <nav>
     <ul>
-        <li><a routerLink="/">Homepage</a></li>
-        <li><a routerLink="/products">Products</a></li>
-        <li><a routerLink="/about-us">About us</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact : true }" routerLink="/">Homepage</a></li>
+        <li><a routerLinkActive="active" routerLink="/products">Products</a></li>
+        <li><a routerLinkActive="active" routerLink="/about-us">About us</a></li>
+        <li><a routerLinkActive="active" routerLink="/contact">Contact</a></li>
     </ul>
 </nav>
