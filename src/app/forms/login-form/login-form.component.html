@@ -3,14 +3,23 @@
     <p>
         <label>
             Email
-            <input name="email" #email="ngModel" [(ngModel)]="loginForm.email" type="text" />
+            <input name="email" email required #email="ngModel" [(ngModel)]="loginForm.email" type="text" />
         </label>
+        <span *ngIf="email.errors && email.touched">
+            <span *ngIf="email.errors.required">Email is required.</span>
+            <span *ngIf="email.errors.email">Email format is not correct.</span>
+        </span>
     </p>
     <p>
         <label>
             Password
-            <input name="password" #password="ngModel" [(ngModel)]="loginForm.password" type="password" />
+            <input name="password" minlength="8" maxlength="12" required #password="ngModel" [(ngModel)]="loginForm.password" type="password" />
         </label>
+        <span *ngIf="password.errors && password.touched">
+            <span *ngIf="password.errors.required">Password is required.</span>
+            <span *ngIf="password.errors.minlength">Password should be atleast 8 chars</span>
+            <span *ngIf="password.errors.maxlength">Password should be less 12 chars</span>
+        </span>
     </p>
-    <button type="submit">Login</button>
+    <button [disabled]="loginForm.status === 'INVALID'" type="submit" >Login</button>
 </form>>
