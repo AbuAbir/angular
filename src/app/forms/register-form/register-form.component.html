@@ -1,0 +1,34 @@
+<form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+    <p>
+        <label>
+            username
+            <!-- {{username.errors | json}} -->
+            <input name="username" formControlName="username" />
+        </label>
+        <span *ngIf="username.errors && username.touched">
+            <span *ngIf="username.errors.required">Username is required.</span>
+        </span>
+    </p>
+    <p>
+        <label>
+            email
+            <!-- {{email.errors | json}} -->
+            <input name="email" formControlName="email" />
+        </label>
+    </p>
+    <p>
+        <label>
+            password
+            <!-- {{password.errors | json}} -->
+            <input name="password" formControlName="password" />
+        </label>
+    </p>
+    <p>
+        <label>
+            confirm password
+            <!-- {{confirmPassword.errors | json}} -->
+            <input name="confirmPassword" formControlName="confirmPassword" />
+        </label>
+    </p>
+    <button [disabled]="registerForm.status === 'INVALID'" type="submit">Register</button>
+</form>

@@ -34,6 +34,18 @@
       "email": "dsfsfsf@dasdad.ds",
       "password": "$2a$10$i.1WZ0f/RP29cOO1PbBsCe3m2tVaDAeMUI3EGht1Uj5VqB8L66nle",
       "id": 7
+    },
+    {
+      "email": "Dsada@dsada.dsad",
+      "password": "$2a$10$u1HuDDQS615LDOb7tPe/8OqxVHk3eFAcej9pPO/GRigDueM1D2JWi",
+      "username": "dasdasda",
+      "id": 8
+    },
+    {
+      "email": "dasdad@dsad.ds",
+      "password": "$2a$10$ReivNTnmOeMR7M7b5uwp5.T3UEeyHgIu2RQzilAWktcYmx6r7p0tq",
+      "username": "das",
+      "id": 9
     }
   ]
 }

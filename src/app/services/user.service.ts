@@ -14,4 +14,8 @@ export class UserService {
     })
   }
 
+  register(user) {
+    return this.http.post("http://localhost:3000/users", { username: user.username, email: user.email, password: user.password })
+  }
+
 }

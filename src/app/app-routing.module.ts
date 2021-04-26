@@ -6,6 +6,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
 
 // Define Route in Array
 const routes: Routes = [
@@ -15,6 +16,9 @@ const routes: Routes = [
     },
     {
       path : "login", component : LoginPageComponent
+    },
+    {
+      path : "register", component : RegisterPageComponent
     },
     {
       path : "products", redirectTo : "new-products"
