@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { timeout } from 'rxjs/operators';
 import { UserService } from 'src/app/services/user.service';
+import { CompareValidator } from 'src/app/utils/validators';
 
 @Component({
   selector: 'tcs-register-form',
@@ -16,7 +16,7 @@ export class RegisterFormComponent implements OnInit {
     email: new FormControl("", [Validators.email]),
     password: new FormControl("", [Validators.required]),
     confirmPassword: new FormControl("", [Validators.required]),
-  })
+  }, [ CompareValidator("password", "confirmPassword") ])
 
   constructor(private user: UserService) { }
 

@@ -17,6 +17,7 @@ import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterFormComponent } from './forms/register-form/register-form.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { CompareValidatorDirective } from './directives/compare-validator.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
     LoginFormComponent,
     LoginPageComponent,
     RegisterFormComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    CompareValidatorDirective
   ],
   imports: [
     BrowserModule,

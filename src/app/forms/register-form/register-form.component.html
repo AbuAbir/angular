@@ -1,3 +1,6 @@
+
+{{registerForm.errors | json}}
+
 <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
     <p>
         <label>
@@ -29,6 +32,9 @@
             <!-- {{confirmPassword.errors | json}} -->
             <input name="confirmPassword" formControlName="confirmPassword" />
         </label>
+        <span *ngIf="registerForm.errors && confirmPassword.touched">
+            <span *ngIf="registerForm.errors.compare">Password and Confirm Password are not matching.</span>
+        </span>
     </p>
     <button [disabled]="registerForm.status === 'INVALID'" type="submit">Register</button>
 </form>

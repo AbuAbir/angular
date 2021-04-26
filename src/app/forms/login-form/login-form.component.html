@@ -5,6 +5,8 @@
             Email
             <input name="email" email required #email="ngModel" [(ngModel)]="loginForm.email" type="text" />
         </label>
+        <!-- pristine - {{ email.pristine }} <br>
+        touched - {{ email.touched }} -->
         <span *ngIf="email.errors && email.touched">
             <span *ngIf="email.errors.required">Email is required.</span>
             <span *ngIf="email.errors.email">Email format is not correct.</span>

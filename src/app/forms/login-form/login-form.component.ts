@@ -10,6 +10,12 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class LoginFormComponent implements OnInit {
 
+  loginForm = {
+    email : "",
+    password : "",
+    confirmPassword : ""
+  }
+
   constructor(private user: UserService, private router: Router) { }
 
   ngOnInit(): void {
