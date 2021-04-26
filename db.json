@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "email": "example@example.com",
+      "password": "$2a$10$cFAzYD7cvm7m3NL.oDBLKOXTUFrkijzpmhTAT2.usv7BU4YTXPgJW",
+      "id": 1
+    },
+    {
+      "email": "dasdsadda@dasd.ds",
+      "password": "$2a$10$qCX8dUa85So3vOvLTKZ1auGHLlgCaFonqI2sAwMSNLEwyFi/9Y/yq",
+      "id": 2
+    },
+    {
+      "email": "dasdas@dasdasd.dsd",
+      "password": "$2a$10$A093g6rFn7vPacOgtB4TgOccF3GWn2I4jqxqwrkwdXCt/tMM0Ycx.",
+      "id": 3
+    },
+    {
+      "email": "dasdas@dasdasd.dsdd",
+      "password": "$2a$10$SRD7u5Qgn2vmBT1b4LZrzOSiteammEYDEXiSendxsEZDyi5kDOFcq",
+      "id": 4
+    },
+    {
+      "email": "dasdadasd@dsdasdsad.dds",
+      "password": "$2a$10$xWkug/Ij4hHRDPVNg8D.qeAMu6itt2A.Yrd/sTdQFXPZAy8L3BMca",
+      "id": 5
+    },
+    {
+      "email": "3424234@ddsadda.cds",
+      "password": "$2a$10$SFyM4r.9EHduUYsUw28ApedynQWOzYWNDUPf5SOt2g6vweNs7/q8C",
+      "id": 6
+    }
+  ]
+}

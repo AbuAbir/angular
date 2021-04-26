@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
@@ -11,6 +12,9 @@ const routes: Routes = [
     {
       // Homepage
       path : "", component : HomePageComponent
+    },
+    {
+      path : "login", component : LoginPageComponent
     },
     {
       path : "products", redirectTo : "new-products"
