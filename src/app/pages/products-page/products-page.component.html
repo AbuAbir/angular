@@ -10,13 +10,17 @@
     <tbody>
         <tr *ngFor="let product of productListing; index as i">
             <th scope="row">{{ i + 1 }}</th>
-            <td>
-
-                {{ product.name }}
+            <td *ngIf="updateItem !== i; else updateName">
+                <a routerLink="/products-details/{{product.id}}">{{ product.name }}</a>
             </td>
             <td>{{ product.price | currency }}</td>
             <td>{{ product.category }}</td>
+            <td><Button (click)="updateProduct(i)">Update</Button></td>
         </tr>
     </tbody>
 </table>
 <button (click)="gotoHomepage()" type="button">Goto Homepage</button>
+
+<ng-template #updateName>
+    <td><input /></td>   
+</ng-template>

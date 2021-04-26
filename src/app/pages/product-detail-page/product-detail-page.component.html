@@ -1,0 +1,5 @@
+<div *ngIf="product && !product.name">Loading...</div>
+<div *ngIf="product && product.name !== ''">
+    <h1>{{ product.name }}</h1>
+    <p>{{ product.make }}</p>
+</div>

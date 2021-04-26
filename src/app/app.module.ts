@@ -9,9 +9,9 @@ import { ProductsComponent } from './components/products/products.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
-import { ProductsDetailsPageComponent } from './pages/products-details-page/products-details-page.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +19,9 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     ProductsComponent,
     HomePageComponent,
     ProductsPageComponent,
-    ProductsDetailsPageComponent,
     NavigationComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    ProductDetailPageComponent
   ],
   imports: [
     BrowserModule,

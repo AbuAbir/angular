@@ -14,4 +14,11 @@ export class ProductsService {
         return this.http.get("/assets/data/products.json")
     }
 
+  getProduct(id)
+      {
+        // /assets/data/product-1.json
+        // /assets/data/product-2.json
+        return this.http.get(`/assets/data/product-${id}.json`)
+      }
+
 }

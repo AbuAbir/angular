@@ -10,6 +10,7 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductsPageComponent implements OnInit {
 
   productListing = [];
+  updateItem = -1;
 
   constructor(private products : ProductsService, private router : Router) { }
 
@@ -23,6 +24,10 @@ export class ProductsPageComponent implements OnInit {
   gotoHomepage(){
       // "/" 
       this.router.navigateByUrl("/")
+  }
+
+  updateProduct(index){
+      this.updateItem = index
   }
 
 }
