@@ -22,4 +22,8 @@ describe('NavigationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have property name with value = navigation', () => {
+    expect(component.name).toEqual("navi");
+  });
 });
