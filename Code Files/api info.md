@@ -123,6 +123,23 @@ Response
 ]
 `
 
+### Get Orders
+#### GET http://localhost:3600/api/v1/orders/:orderid
+
+Headers
+Authorization : ACCESS_TOKEN
+
+Response
+`
+{
+        "items": [
+            "2XhiH7KdRUfEuFrz"
+        ],
+        "status": "DELIVERED",
+        "_id": "VPP5kX9A5v0cF3bs"
+}
+`
+
 ### Add Friend
 #### POST localhost:3600/api/v1/friends
 
