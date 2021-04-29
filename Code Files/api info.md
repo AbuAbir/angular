@@ -208,3 +208,30 @@ Response
     }
 }
 `
+
+### Add Address
+#### POST http://localhost:3600/api/v1/settings/address
+
+Headers
+Authorization : ACCESS_TOKEN
+
+Body 
+`
+    "address" : "ADDRESS COME HERE"
+`
+
+Response
+`
+{
+    "email": "example@dasds.dsd",
+    "_id": "nEjCk45UF43HTEfq",
+    "friends": [
+        "ZP9eMiSZYrlOD5dC"
+    ],
+    "addresses": [
+        "403927492472947209497289456 457683567865736578436586356 4365643 7856438725 453 532523 5",
+        "ldkkjsfkj hskjds hfksdhfkjhsd kfhdkj hfdkshfjd glkflhgds flhjsdjfdshjfg jhsdf",
+        "dsalkdhfkjshfshfhdsk hhfjksh fjkhskjfhs klfhdshkjf hdskjfhkdshf khskjdfhsdkjf hkjsdhfhsdkf hksdj"
+    ]
+}
+`
