@@ -217,7 +217,9 @@ Authorization : ACCESS_TOKEN
 
 Body 
 `
-    "address" : "ADDRESS COME HERE"
+    {
+        "address" : "ADDRESS COME HERE"
+    }
 `
 
 Response
