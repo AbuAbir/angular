@@ -45,14 +45,6 @@ Response
 ### Feed 
 #### GET http://localhost:3600/api/v1/feed
 
-Body 
-`
-{
-    "email" : "email@example.com",
-    "password" : "12345678"
-}
-`
-
 Response
 `
 [
@@ -158,4 +150,61 @@ Response
 [
     
 ]
+`
+
+### Get Users
+#### GET localhost:3600/api/v1/users
+
+Headers
+Authorization : ACCESS_TOKEN
+
+
+Response `
+{
+    "status": "success",
+    "data": [
+        {
+            "email": "example2@dasds.dsd",
+            "_id": "ZP9eMiSZYrlOD5dC"
+        }
+    ]
+}
+`
+
+### Get Users
+#### GET http://localhost:3600/api/v1/users/:ID
+
+Headers
+Authorization : ACCESS_TOKEN
+
+Response `
+{
+    "status": "success",
+    "data": {
+        "email": "example2@dasds.dsd",
+        "_id": "ZP9eMiSZYrlOD5dC"
+    }
+}`
+
+### Change password
+#### POST localhost:3600/api/v1/forgotpassword
+
+Headers
+Authorization : ACCESS_TOKEN
+
+Body
+`
+    {
+        "password" : "NEW_PASSWORD"
+    }
+`
+
+Response 
+`
+{
+    "status": "success",
+    "data": {
+        "email": "example@dasds.dsd"
+    }
+}
 `
