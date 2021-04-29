@@ -1,0 +1,6 @@
+{"storeName":"Fruits Unlimited","name":"Raspberry","description":"Box of Raspberrys.","price":{"price":0.99,"discount":0},"images":["http://localhost:3600/images/raspberry.jpeg"],"_id":"2XhiH7KdRUfEuFrz"}
+{"storeName":"Chocobar","name":"Pack of Chocolates","description":"Pack of 24 Assorted Chocolates","price":{"price":3.99,"discount":1.99},"images":["http://localhost:3600/images/chocolate.jpeg"],"_id":"66s03DoZ4UFcW69E"}
+{"storeName":"Spice Market","name":"Indian Thali","description":"Curry and Naan with Pickles","price":{"price":5.99,"discount":1.99},"images":["http://localhost:3600/images/spices.jpeg"],"_id":"QyjG3fkGkTRXFb3B"}
+{"storeName":"Coffee Shop","name":"Coffee","description":"Large Coffee","price":{"price":2.99,"discount":0},"images":["http://localhost:3600/images/coffee-beans.jpeg"],"_id":"dmnUh2ccmyzTqgvb"}
+{"storeName":"Fruits Unlimited","name":"Kiwi","description":"Kiwi slices","price":{"price":0.99,"discount":0},"images":["http://localhost:3600/images/kiwi.jpeg"],"_id":"j9ZBLsW6v548kFQN"}
+{"storeName":"Fruits Unlimited","name":"Oranges","description":"Bunch of oranges.","price":{"price":0.99,"discount":0},"images":["http://localhost:3600/images/orange.jpeg"],"_id":"wCTWfH57mT69ZSiU"}

@@ -1,0 +1,3 @@
+- Go to API folder using NodeJS Command Prompt
+- Install all node modules by running command "npm install"
+- Start server by running command "npm run start-dev"

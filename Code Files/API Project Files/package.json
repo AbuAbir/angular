@@ -1,0 +1,30 @@
+{
+  "name": "legacy-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start-dev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "babel-loader": "^8.2.2",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "webpack": "^5.36.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
