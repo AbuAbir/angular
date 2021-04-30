@@ -6,6 +6,7 @@
         <li><a routerLinkActive="active" routerLink="/contact">Contact</a></li>
         <li><a routerLinkActive="active" routerLink="/login">Login</a></li>
         <li><a routerLinkActive="active" routerLink="/register">Register</a></li>
-
     </ul>
+    <div *ngIf="isUserLoggedIn">Logged In</div>
+    <div *ngIf="!isUserLoggedIn">Logged Out</div>
 </nav>

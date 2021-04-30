@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'tcs-navigation',
@@ -9,9 +10,14 @@ export class NavigationComponent implements OnInit {
 
   name = "navigation";
 
-  constructor() { }
+  isUserLoggedIn = false;
+
+  constructor(private user: UserService) { }
 
   ngOnInit(): void {
+    this.user.userInfo.subscribe((response) => {
+      this.isUserLoggedIn = response ? true : false;
+    })
   }
 
 

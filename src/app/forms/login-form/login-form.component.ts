@@ -11,22 +11,23 @@ import { UserService } from 'src/app/services/user.service';
 export class LoginFormComponent implements OnInit {
 
   loginForm = {
-    email : "",
-    password : "",
-    confirmPassword : ""
+    email: "",
+    password: "",
+    confirmPassword: ""
   }
 
   constructor(private user: UserService, private router: Router) { }
 
   ngOnInit(): void {
+    this.user.userInfo.subscribe((response: any) => {
+      window.localStorage.setItem("access-token", response.accessToken)
+      this.router.navigateByUrl("/")
+    })
   }
 
   login(loginForm) {
     const { email, password } = loginForm.form.value
-    this.user.login(email, password).subscribe((response: any) => {
-      window.localStorage.setItem("access-token", response.accessToken)
-      this.router.navigateByUrl("/")
-    })
+    this.user.login(email, password);
   }
 
 }

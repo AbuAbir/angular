@@ -46,6 +46,17 @@
       "password": "$2a$10$ReivNTnmOeMR7M7b5uwp5.T3UEeyHgIu2RQzilAWktcYmx6r7p0tq",
       "username": "das",
       "id": 9
+    },
+    {
+      "email": "abc@abc",
+      "password": "$2a$10$9SSykoojYjfyTUGNLOgg0.tD64MaDdxqXk/7GB2N3Qwy1BGsqmjA6",
+      "username": "abc",
+      "id": 10
+    },
+    {
+      "email": "abc@abcd",
+      "password": "$2a$10$wVo802oWdiVxt2KH1pWQO.dgq2zWVkhlkbNfvteaL.OIJ0jawq296",
+      "id": 11
     }
   ]
 }
